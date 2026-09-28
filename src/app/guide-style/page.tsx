@@ -1,7 +1,71 @@
 // app/style-guide/page.tsx
 import React from "react";
+import LogoLoop from "../components/Animations/LogoLoop";
+import {
+  FaReact,
+  FaNodeJs,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaWhatsapp,
+  FaAws,
+  FaPenNib,
+} from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FadeUp } from "../components/Animations/FadeUp";
+import {
+  StaggerContainer,
+  StaggerItem,
+} from "../components/Animations/Stagger";
 
-/* Tipagem para mapeamento dos tokens de cor da marca */
+const logos = [
+  { node: <FaReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <FaNodeJs />, title: "Node.js", href: "https://nodejs.org" },
+  {
+    node: <FaJs />,
+    title: "JavaScript",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    node: <FaHtml5 />,
+    title: "HTML5",
+    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    node: <FaCss3Alt />,
+    title: "CSS3",
+    href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    node: <SiTailwindcss />,
+    title: "Tailwind CSS",
+    href: "https://tailwindcss.com",
+  },
+  { node: <FaAws />, title: "AWS", href: "https://aws.amazon.com" },
+  { node: <FaGithub />, title: "GitHub", href: "https://github.com" },
+  { node: <FaLinkedin />, title: "LinkedIn", href: "https://www.linkedin.com" },
+  {
+    node: <FaInstagram />,
+    title: "Instagram",
+    href: "https://www.instagram.com",
+  },
+  { node: <FaWhatsapp />, title: "WhatsApp", href: "https://www.whatsapp.com" },
+  { node: <FaPenNib />, title: "Design", href: "#" },
+];
+
+const brandColors = [
+  "bg-brand-dark",
+  "bg-brand-gray",
+  "bg-brand-light",
+  "bg-brand-yellow",
+  "bg-brand-orange",
+  "bg-brand-red",
+  "bg-brand-teal",
+];
 
 export default function GuideStyle(): React.ReactElement {
   return (
@@ -11,18 +75,16 @@ export default function GuideStyle(): React.ReactElement {
       </header>
 
       {/* Paleta de cores */}
-      <section className="">
-        <h2 className="section-title">Cores</h2>
+      <section>
+        <h2 className="section-title mb-4">Cores</h2>
 
-        <article className="flex gap-3">
-          <div className="h-24 aspect-square bg-brand-dark rounded-2xl"></div>
-          <div className="h-24 aspect-square bg-brand-gray rounded-2xl"></div>
-          <div className="h-24 aspect-square bg-brand-light rounded-2xl"></div>
-          <div className="h-24 aspect-square bg-brand-yellow rounded-2xl"></div>
-          <div className="h-24 aspect-square bg-brand-orange rounded-2xl"></div>
-          <div className="h-24 aspect-square bg-brand-red rounded-2xl"></div>
-          <div className="h-24 aspect-square bg-brand-teal rounded-2xl"></div>
-        </article>
+        <StaggerContainer className="flex flex-wrap gap-3">
+          {brandColors.map((colorClass, index) => (
+            <StaggerItem key={index}>
+              <div className={`h-24 aspect-square rounded-2xl ${colorClass}`} />
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
       </section>
 
       {/* Tipografia */}
@@ -75,7 +137,7 @@ export default function GuideStyle(): React.ReactElement {
       </section>
 
       {/* Cards */}
-      <section>
+      <FadeUp>
         <h2 className="section-title">Cards</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <article className="card-yellow-border">
@@ -93,7 +155,10 @@ export default function GuideStyle(): React.ReactElement {
             </p>
           </article>
         </div>
-      </section>
+      </FadeUp>
+
+      {/* Lista de componentes */}
+      <LogoLoop logos={logos} />
     </main>
   );
 }
