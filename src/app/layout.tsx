@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={bakbak.variable}>
-      <body className="min-h-full flex flex-col bg-brand-dark text-brand-gray">
+      <body className="bg-stone-900 text-brand-light">
         {children}
       </body>
       {/* <GoogleTagManager gtmId="GTM-XXXXXXX" /> */}
