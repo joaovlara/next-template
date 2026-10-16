@@ -30,7 +30,7 @@
 
   a,
   button {
-    @apply hover:cursor-pointer transition-colors duration-300;
+    @apply hover:cursor-pointer transition-colors duration-300 inline-block;
   }
 }
 
