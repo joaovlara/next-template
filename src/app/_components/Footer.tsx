@@ -1,5 +1,5 @@
 import React from 'react'
-import {infos} from "@/data/data"
+import {infos} from "@/src/app/_data/data"
 
 const Footer = () => {
   return (
