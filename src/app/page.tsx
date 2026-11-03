@@ -1,7 +1,6 @@
 import Hero from "./components/Sections/Hero";
 import CTA from "./components/Sections/CTA";
 import WhatsAppButton from "./components/WppButton";
-import GetApp from "./components/Sections/GetApp";
 import Highlights from "./components/Sections/Highlights";
 import About from "./components/Sections/About";
 import Services from "./components/Sections/Services";
@@ -11,10 +10,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <GetApp />
-      <Highlights />
       <About />
       <Services />
+      <Highlights />
       <Testimonials />
       <CTA />
       {/* <WhatsAppButton /> */}
