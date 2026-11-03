@@ -1,5 +1,3 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Hero from "./components/Sections/Hero";
 import CTA from "./components/Sections/CTA";
 import WhatsAppButton from "./components/WppButton";
@@ -11,19 +9,15 @@ import Testimonials from "./components/Sections/Testimonials";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <GetApp />
-        <Highlights />
-        <About />
-        <Services />
-        <Testimonials />
-        <CTA />
-      </main>
-      <Footer />
+    <main>
+      <Hero />
+      <GetApp />
+      <Highlights />
+      <About />
+      <Services />
+      <Testimonials />
+      <CTA />
       {/* <WhatsAppButton /> */}
-    </>
+    </main>
   );
 }

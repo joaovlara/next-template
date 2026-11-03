@@ -40,6 +40,18 @@
     @apply inline-flex items-center justify-center px-6 py-2 rounded-md font-semibold text-white cursor-pointer transition-colors duration-300;
   }
 
+  .btn-yellow {
+    @apply bg-brand-yellow
+  }
+
+  .btn-cta-nav {
+    @apply bg-brand-yellow hover:bg-brand-teal py-3 px-9 font-semibold text-brand-dark rounded-md
+  }
+  
+  .item-nav {
+    @apply hover:text-brand-teal
+  }
+
   /* Container centralizado */
   .container {
     @apply max-w-7xl mx-auto px-3;

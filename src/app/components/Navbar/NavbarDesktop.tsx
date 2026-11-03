@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export const NavbarDesktop = () => {
   return (
-    <nav className="hidden lg:flex h-[10dvh] bg-stone-500">
+    <nav className="hidden lg:flex h-[10dvh] bg-brand-dark border-b border-brand-teal">
       <div className="container flex justify-between items-center">
         <Image
           src="/favicon.ico"
           alt="Logo" height={60} width={60}
           className=""
         />
-        <div className="flex gap-3">
+        <div className="flex gap-12 font-semibold">
           {navigation.map((item, index) => (
             <a key={index} 
               href={item.href || "#"} className="item-nav">
@@ -19,7 +19,7 @@ export const NavbarDesktop = () => {
             </a>
           ))}
         </div>
-        <a href="btn-cta-nav">Fale Conosco</a>
+        <a className="btn-cta-nav">Fale Conosco</a>
       </div>
     </nav>
   );

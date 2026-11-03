@@ -5,6 +5,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Bakbak_One } from 'next/font/google';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = seoConfig;
 const bakbak = Bakbak_One({
@@ -21,7 +23,9 @@ export default function RootLayout({
   return (
     <html className={bakbak.variable}>
       <body className="bg-stone-900 text-brand-light">
+        <Navbar />
         {children}
+        <Footer />
       </body>
       {/* <GoogleTagManager gtmId="GTM-XXXXXXX" /> */}
       <Analytics />
