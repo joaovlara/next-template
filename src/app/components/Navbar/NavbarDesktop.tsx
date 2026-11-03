@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const NavbarDesktop = () => {
   return (
-    <nav className="hidden lg:flex h-[10dvh] bg-brand-dark border-b border-brand-teal">
+    <nav className="hidden lg:flex h-[10dvh] bg-brand-dark border-b border-brand-teal/30">
       <div className="container flex justify-between items-center">
         <Image
           src="/favicon.ico"

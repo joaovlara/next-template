@@ -21,7 +21,7 @@
     @apply font-poppins;
   }
   h1 {
-    @apply font-bakbak text-9xl font-semibold;
+    @apply font-bakbak text-6xl md:text-7xl lg:text-9xl font-semibold uppercase;
   }
 
   h2 {
@@ -45,7 +45,7 @@
   }
 
   .btn-cta-nav {
-    @apply bg-brand-yellow hover:bg-brand-teal py-3 px-9 font-semibold text-brand-dark rounded-md
+    @apply bg-brand-yellow border-brand-orange border-3 rounded-full hover:bg-brand-teal py-3 px-9 font-semibold text-brand-light
   }
   
   .item-nav {
