@@ -41,15 +41,15 @@
   }
 
   .btn-yellow {
-    @apply bg-brand-yellow
+    @apply bg-brand-yellow;
   }
 
   .btn-cta-nav {
-    @apply bg-brand-yellow border-brand-orange border-3 rounded-full hover:bg-brand-teal py-3 px-9 font-semibold text-brand-light
+    @apply bg-brand-yellow border-brand-orange border-3 rounded-full hover:bg-brand-teal py-3 px-9 font-semibold text-brand-light;
   }
-  
+
   .item-nav {
-    @apply hover:text-brand-teal
+    @apply hover:text-brand-teal;
   }
 
   /* Container centralizado */
@@ -73,6 +73,14 @@
   }
   .card-teal-border {
     @apply bg-brand-teal border-4 border-brand-dark p-6 rounded-2xl text-brand-light font-semibold;
+  }
+
+  .card-hero {
+    @apply border-brand-orange border-6 bg-brand-yellow rounded-full flex justify-center items-center text-white uppercase text-lg;
+  }
+
+  .card-about {
+    @apply text-brand-dark bg-brand-teal w-[30vw] h-70 transform rotate-[3deg];
   }
 }
 

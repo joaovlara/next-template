@@ -14,7 +14,10 @@ export default function Hero() {
           <h1>Lorem ipsulume <br /> dotr sithe dotmetsas</h1>
         </section>
         <section className="pl-0 md:pl-20 grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div className="order-last md:order-first">card</div>
+
+          <div className="order-last md:order-first card-hero">
+            card
+          </div>
 
           <div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe

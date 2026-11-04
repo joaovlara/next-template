@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="bg-brand-light py-20 relative overflow-hidden">
       {/* Marca-d'água "ABOUT" alinhada no topo superior direito */}
-      <h2 className="absolute top-4 right-10 text-[14vw] font-black uppercase text-black/5 leading-none select-none pointer-events-none z-0">
+      <h2 className="absolute top-0 right-10 text-[14vw] font-black uppercase text-brand-dark/5 leading-none select-none pointer-events-none z-0">
         About
       </h2>
 
@@ -23,31 +23,8 @@ export default function About() {
           </p>
         </div>
 
-        {/* Lado direito: card retangular com rotação fixa e sombra pronunciada */}
-        <div className="lg:col-span-5 relative flex justify-center lg:justify-end mt-8 lg:mt-0">
-          <div className="bg-orange-500 text-white p-8 rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.25)] transform rotate-[3deg] w-full max-w-md aspect-[1.4/1] flex flex-col justify-between border border-black/10">
-            <div>
-              <h3 className="text-2xl font-black uppercase tracking-wide mb-3">
-                Statement of <br /> Changes in Equity
-              </h3>
-            </div>
-
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-lg text-xs font-bold">
-                <span>CLAIM WITH US</span>
-                <span className="bg-yellow-300 text-black px-1.5 py-0.5 rounded text-[10px]">
-                  10% +
-                </span>
-              </div>
-              <br />
-              <div className="inline-flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-lg text-xs font-bold">
-                <span>INDIVIDUAL CLAIM</span>
-                <span className="bg-white text-black px-1.5 py-0.5 rounded text-[10px]">
-                  4% +
-                </span>
-              </div>
-            </div>
-          </div>
+        <div className="card-teal-border w-[30vw] h-50 transform rotate-[3deg] relative top-10">
+          teste
         </div>
       </article>
     </section>
