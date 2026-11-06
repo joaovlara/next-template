@@ -7,6 +7,7 @@
 
   /* Colors */
   --color-brand-dark: #10101c;
+  --color-brand-black: #000000;
   --color-brand-gray: #cdcdcd;
   --color-brand-light: #efebe4;
   --color-brand-yellow: #e29d20;
@@ -35,7 +36,7 @@
   
   /* Container centralizado */
   .container {
-    @apply max-w-7xl mx-auto px-3 py-1.5 bg-gray-400/50 border border-red-600;
+    @apply max-w-7xl mx-auto px-3 py-1.5;
   }
 
 }
