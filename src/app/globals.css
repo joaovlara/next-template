@@ -35,23 +35,24 @@
   
   /* Container centralizado */
   .container {
-    @apply max-w-7xl mx-auto px-3 py-1.5 bg-gray-400 border-2 border-red-600;
+    @apply max-w-7xl mx-auto px-3 py-1.5 bg-gray-400/50 border border-red-600;
   }
 
 }
 
 @layer components {
+
+  .card-color-guide {
+    @apply aspect-square flex justify-center items-center p-3 h-40 rounded-2xl font-bold;
+  }
+
   /* Botão padrão */
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-2 rounded-md font-semibold text-white cursor-pointer transition-colors duration-300;
+    @apply bg-brand-red hover:bg-white hover:text-black w-full p-3 rounded;
   }
 
-  .btn-yellow {
-    @apply bg-brand-yellow;
-  }
-
-  .btn-cta-nav {
-    @apply bg-brand-yellow border-brand-orange border-3 rounded-full hover:bg-brand-teal py-3 px-9 font-semibold text-brand-light;
+  .btn-outline {
+    @apply border-2 border-brand-red hover:bg-white hover:text-black w-full p-3 rounded;
   }
 
   .item-nav {
