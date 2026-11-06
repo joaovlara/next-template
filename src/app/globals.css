@@ -32,6 +32,12 @@
   button {
     @apply hover:cursor-pointer transition-colors duration-300 inline-block;
   }
+  
+  /* Container centralizado */
+  .container {
+    @apply max-w-7xl mx-auto px-3 py-1.5 bg-gray-400 border-2 border-red-600;
+  }
+
 }
 
 @layer components {
@@ -52,11 +58,6 @@
     @apply hover:text-brand-teal;
   }
 
-  /* Container centralizado */
-  .container {
-    @apply max-w-7xl mx-auto px-3 py-1.5 bg-gray-400 border-2 border-red-600;
-  }
-
   /* Texto padrão */
   .text {
     @apply text-brand-gray leading-relaxed;
@@ -68,28 +69,14 @@
 
   /* Cards */
 
-  .card-yellow-border {
-    @apply bg-brand-yellow border-4 border-brand-orange p-6 rounded-2xl text-brand-light font-semibold;
-  }
-  .card-teal-border {
-    @apply bg-brand-teal border-4 border-brand-dark p-6 rounded-2xl text-brand-light font-semibold;
+  .card {
+    @apply rounded-2xl
   }
 
-  .card-hero {
-    @apply border-brand-orange border-6 bg-brand-yellow rounded-full flex justify-center items-center text-white uppercase text-lg;
-  }
-
-  .card-about {
-    @apply text-brand-dark bg-brand-teal w-[30vw] h-70 transform rotate-[3deg];
-  }
 }
 
 @layer utilities {
   .bg-gradient {
     @apply bg-gradient-to-r;
-  }
-
-  .border-bottom {
-    @apply border-b border-b-brand-light/15 pb-3;
   }
 }

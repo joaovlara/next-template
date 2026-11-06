@@ -25,9 +25,9 @@ export default function RootLayout({
       <body className="bg-stone-900 text-brand-light">
         {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
-      {/* <GoogleTagManager gtmId="GTM-XXXXXXX" /> */}
+      <GoogleTagManager gtmId="" />
       <Analytics />
       <SpeedInsights />
     </html>
