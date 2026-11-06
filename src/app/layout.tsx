@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html className={bakbak.variable}>
       <body className="bg-stone-900 text-brand-light">
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

@@ -4,16 +4,16 @@ import WhatsAppButton from "./components/WppButton";
 import Highlights from "./components/Sections/Highlights";
 import About from "./components/Sections/About";
 import Services from "./components/Sections/Services";
-import Testimonials from "./components/Sections/Testimonials";
+import Portfolio from "./components/Sections/Portfolio";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <About />
-      <Services />
       <Highlights />
-      <Testimonials />
+      <Services />
+      <Portfolio />
       <CTA />
       {/* <WhatsAppButton /> */}
     </main>
