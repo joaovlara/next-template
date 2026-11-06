@@ -20,8 +20,10 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/data/*": ["./src/app/data/*"],
-      "@/images/*": ["./public/images/*"]
+      "@data/*": ["./src/app/data/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@images/*": ["./public/images/*"]
+      
     }
   },
   "include": [
