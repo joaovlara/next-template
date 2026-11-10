@@ -12,13 +12,16 @@
 import type { Metadata } from "next";
 
 // Variáveis globais
-const url = "url";
-const title = "Titulo";
-const description = "Descrição";
+const url = "https://potengigarantia.com.br";
+const title = "Potêngi Garantia Condominial";
 const image = `${url}/preview.jpg`;
 
+const description =
+  "Garantia condominial com segurança financeira, tranquilidade na gestão e valorização do patrimônio.";
+
 export const seoConfig: Metadata = {
-  title,
+  metadataBase: new URL(url),
+  title: { default: title, template: `%s | ${title}` },
   description,
   keywords: ["Next.js", "ReactJs", "TailwindCSS"],
   alternates: {
