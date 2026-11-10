@@ -14,7 +14,7 @@ export default function Services() {
       </article>
 
       <article className="container mx-auto px-4">
-        <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
+        <div className="relative w-full h-[400px] md:h-[500px] card overflow-hidden">
           <Image
             src="/images/office-workplace-with-laptop-free-photo.jpg"
             alt="Workplace"
