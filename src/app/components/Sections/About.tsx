@@ -1,4 +1,5 @@
 import { infos } from "@data/data";
+import { FaGithub } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -10,8 +11,8 @@ export default function About() {
             <h3 className="text-2xl md:text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporisrem im</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporisrem im</p>
           </div>
-          <div className="bg-red-600 md:w-1/3">
-            imagem
+          <div className=" flex justify-center items-center md:w-1/3">
+            <FaGithub className="text-9xl" />
           </div>
         </div>
       </article>
