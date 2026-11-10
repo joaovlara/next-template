@@ -12,7 +12,6 @@ import Testimonials from "./_components/Sections/Testimonials";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main>
         <Hero />
         <GetApp />
@@ -22,7 +21,6 @@ export default function Home() {
         <Testimonials />
         <CTA />
       </main>
-      <Footer />
       {/* <WhatsAppButton /> */}
     </>
   );
