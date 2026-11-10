@@ -11,7 +11,7 @@ export const NavbarMobile = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="lg:hidden bg-brand-dark h-[10dvh] flex items-center px-4">
+    <nav className="lg:hidden h-[10dvh] border-b border-brand-teal/30 flex items-center px-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Image

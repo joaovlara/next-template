@@ -52,7 +52,7 @@ const logosItems = [
 
 const Logos = () => {
   return (
-    <section className="container">
+    <section className="py-3 bg-gray-400/50">
       <LogoLoop logos={logosItems} />
     </section>
   );
