@@ -1,9 +1,230 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold-light: #f7c258;
-  --color-gold: #e2a021;
-  --color-gold-dark: #c1810b;
-  --color-ivory: #f3ece1;
-  --color-graphite: #222326;
+  /* Fonts */
+  --font-montserrat: "Montserrat", system-ui, sans-serif;
+  --font-articulat: "Articulat CF", "Inter", system-ui, sans-serif;
+
+  /* Colors */
+  --color-brand-graphite: #222326;
+  --color-brand-graphite-600: #3a3b3f;
+  --color-brand-graphite-400: #5b5c61;
+  --color-brand-ivory: #f3ece1;
+  --color-brand-sand: #e9dfce;
+  --color-brand-gray: #cfc8bb;
+  --color-brand-muted: #55565a;
+  --color-brand-gold: #e2a021;
+  --color-brand-gold-light: #f7c258;
+  --color-brand-gold-dark: #c1810b;
+  --color-brand-gold-ink: #8a5a06;
+  --color-brand-success: #2f7d4f;
+  --color-brand-error: #b3382c;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+@layer base {
+  html {
+    @apply font-articulat;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-brand-ivory text-brand-graphite text-[17px] leading-relaxed antialiased;
+  }
+
+  h1 {
+    @apply font-montserrat text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tighter;
+  }
+
+  h2 {
+    @apply font-montserrat text-2xl md:text-4xl font-bold leading-tight tracking-tight;
+  }
+
+  h3 {
+    @apply font-montserrat text-xl md:text-2xl font-semibold leading-snug;
+  }
+
+  h4 {
+    @apply font-montserrat text-lg font-semibold;
+  }
+
+  a,
+  button {
+    @apply hover:cursor-pointer transition-colors duration-300 inline-block;
+  }
+
+  /* Foco visível em todo o site */
+  :focus-visible {
+    @apply outline-3 outline-offset-2 outline-brand-gold rounded-sm;
+  }
+
+  ::selection {
+    @apply bg-brand-gold text-brand-graphite;
+  }
+}
+
+@layer components {
+  /* Seções */
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-alt {
+    @apply bg-brand-sand;
+  }
+
+  .section-dark {
+    @apply bg-brand-graphite text-brand-ivory;
+  }
+
+  .section-dark .text {
+    @apply text-brand-gray;
+  }
+
+  /* Navegação */
+  .header {
+    @apply sticky top-0 z-50 bg-brand-ivory border-b border-brand-sand;
+  }
+
+  .item-nav {
+    @apply font-montserrat font-medium text-brand-muted hover:text-brand-graphite;
+  }
+
+  .item-nav-active {
+    @apply text-brand-graphite underline decoration-brand-gold decoration-2 underline-offset-8;
+  }
+
+  /* Botões */
+  .btn,
+  .btn-dark,
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-sm font-montserrat font-semibold disabled:opacity-45 disabled:cursor-not-allowed;
+  }
+
+  /* Botão padrão (ação principal): grafite sobre dourado */
+  .btn {
+    @apply bg-brand-gold text-brand-graphite hover:bg-brand-gold-light active:bg-brand-gold-dark;
+  }
+
+  .btn-dark {
+    @apply bg-brand-graphite text-brand-ivory hover:bg-brand-graphite-600;
+  }
+
+  .btn-outline {
+    @apply border-2 border-current bg-transparent hover:bg-brand-sand hover:text-brand-graphite;
+  }
+
+  .btn-sm {
+    @apply min-h-9 px-4 text-sm;
+  }
+
+  /* Texto padrão */
+  .text {
+    @apply text-brand-muted leading-relaxed max-w-prose;
+  }
+
+  .caption {
+    @apply text-sm text-brand-muted;
+  }
+
+  /* Links de texto: dourado escuro garante contraste sobre marfim */
+  .link {
+    @apply text-brand-gold-ink font-medium underline underline-offset-4 hover:text-brand-graphite;
+  }
+
+  .section-dark .link {
+    @apply text-brand-gold-light hover:text-brand-ivory;
+  }
+
+  /* Cards: canto recortado a 30°, como o símbolo */
+  .card {
+    @apply bg-white border border-brand-sand p-6 md:p-7 rounded-b-md;
+    clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 16px, 100% 100%, 0 100%);
+  }
+
+  .card-dark {
+    @apply bg-brand-graphite text-brand-ivory border-brand-graphite;
+  }
+
+  .card-dark .text {
+    @apply text-brand-gray;
+  }
+
+  /* Selos */
+  .badge {
+    @apply inline-block px-2.5 py-0.5 rounded-sm font-montserrat text-sm font-semibold bg-brand-gold text-brand-graphite;
+  }
+
+  .badge-outline {
+    @apply bg-transparent border-[1.5px] border-current;
+  }
+
+  /* Avisos */
+  .alert {
+    @apply flex gap-3 p-4 rounded-md border-l-[6px];
+  }
+
+  .alert-success {
+    @apply bg-[#e1f1e7] border-brand-success text-[#173f29];
+  }
+
+  .alert-warning {
+    @apply bg-[#f6e6c4] border-brand-gold-dark text-[#4e3304];
+  }
+
+  .alert-error {
+    @apply bg-[#f8e0dc] border-brand-error text-[#6e211a];
+  }
+
+  /* Faixa de chamada para ação */
+  .cta-band {
+    @apply bg-brand-graphite text-brand-ivory rounded-lg p-8 md:p-10 flex flex-wrap items-center justify-between gap-6;
+  }
+
+  /* Rodapé */
+  .footer {
+    @apply bg-brand-graphite text-brand-gray py-12;
+  }
+}
+
+/* Utilities (Tailwind v4 usa @utility para classes que aceitam variantes) */
+@utility container {
+  margin-inline: auto;
+  max-width: 70rem;
+  padding-inline: 1.5rem;
+}
+
+@utility bg-gradient-brand {
+  background-image: linear-gradient(
+    135deg,
+    #c1810b 0%,
+    #e2a021 50%,
+    #f7c258 100%
+  );
+}
+
+@utility text-gradient-brand {
+  background-image: linear-gradient(
+    135deg,
+    #c1810b 0%,
+    #e2a021 50%,
+    #f7c258 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility cut-corner {
+  clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 16px, 100% 100%, 0 100%);
 }
