@@ -94,6 +94,18 @@
     @apply font-montserrat text-sm font-bold text-brand-graphite sm:text-base;
   }
 
+  .highlight-card-link {
+    @apply flex size-9 items-center justify-center rounded-full text-brand-graphite transition-colors hover:bg-brand-gold-dark hover:text-brand-ivory;
+  }
+
+  .highlight-card-link svg {
+    @apply size-5 transition-transform;
+  }
+
+  .highlight-card-link:hover svg {
+    @apply scale-110;
+  }
+
   .service-card {
     @apply h-full;
   }
