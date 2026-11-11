@@ -7,21 +7,23 @@ export default function Hero() {
     <section className="hero-section">
       <div className="hero-background" aria-hidden="true" />
 
-      <FadeIn className="hero-content container-1 flex flex-col items-center gap-8">
-        <h1>
-          <HighlightText text={hero.h1} />
-        </h1>
+      <FadeIn className="hero-content container">
+        <div className="hero-card">
+          <h1>
+            <HighlightText text={hero.h1} />
+          </h1>
 
-        <p className="text max-w-2xl">{hero.text}</p>
+          <p className="text">{hero.text}</p>
 
-        <a
-          href={hero.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-hero max-w-md"
-        >
-          {hero.buttonLabel}
-        </a>
+          <a
+            href={hero.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hero"
+          >
+            {hero.buttonLabel}
+          </a>
+        </div>
       </FadeIn>
     </section>
   );

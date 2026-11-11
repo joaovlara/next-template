@@ -232,15 +232,38 @@
 
   /* Layout de seções */
   .hero-section {
-    @apply relative isolate min-h-[90vh] flex items-center justify-center overflow-hidden px-6 text-center;
+    @apply relative isolate flex h-screen items-end overflow-hidden px-6;
   }
 
   .hero-content {
-    @apply relative z-10;
+    @apply relative z-10 flex h-full w-full items-end;
+  }
+
+  .hero-card {
+    @apply flex min-h-[80vh] w-full max-w-[38rem] flex-col items-start justify-center gap-4 self-end overflow-hidden bg-brand-graphite/90 p-6 text-left shadow-2xl sm:min-h-[60vh] sm:gap-5 sm:p-8 md:gap-6 md:p-10;
+  }
+
+  .hero-card h1 {
+    @apply max-w-full text-[clamp(2.25rem,6vw,4.5rem)] leading-[0.95] text-brand-ivory;
+  }
+
+  .hero-card .text {
+    @apply max-w-[34rem] text-sm text-brand-gray sm:text-base;
+  }
+
+  .hero-card .text-highlight {
+    @apply text-brand-gold-light;
+  }
+
+  .hero-card .btn-hero {
+    @apply shrink-0;
   }
 
   .hero-background {
-    @apply absolute inset-0 -z-10 bg-linear-to-t from-brand-gold-dark to-transparent opacity-40;
+    @apply absolute inset-0 -z-10 bg-cover bg-center grayscale;
+    background-image:
+      linear-gradient(to top, rgb(34 35 38 / 65%), rgb(34 35 38 / 0%) 58%),
+      url("/images/predios-xrdes-tTWpe81zK8A-unsplash.jpg");
   }
 
   .section-eyebrow {
