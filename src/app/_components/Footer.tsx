@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import { infos, routes } from "@/src/app/_data/data";
 
@@ -6,13 +7,18 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container grid gap-10 md:grid-cols-3">
-        <div>
-          <p className="max-w-prose">
-            Segurança financeira e valorização para a gestão condominial.
-          </p>
+        <div className="footer-brand">
+          <Image
+            src="/images/logo/Logo.png"
+            alt={infos.name}
+            width={180}
+            height={80}
+            className="footer-logo"
+          />
+          <p>Segurança financeira e valorização para a gestão condominial.</p>
         </div>
         <div>
-          <h2>Navegação</h2>
+          <h2 className="footer-heading">Navegação</h2>
           <nav className="mt-4 flex flex-col gap-2" aria-label="Navegação do rodapé">
             {routes.map((item) => (
               <Link href={item.href} key={item.href} className="link">
@@ -22,7 +28,7 @@ const Footer = () => {
           </nav>
         </div>
         <address className="not-italic">
-          <h2>Contato</h2>
+          <h2 className="footer-heading">Contato</h2>
           <div className="mt-4 flex flex-col gap-3">
           <a href={`tel:${infos.phone.replace(/\s+/g, "")}`} className="flex items-center gap-2">
             <LuPhone aria-hidden="true" />
@@ -39,7 +45,7 @@ const Footer = () => {
           </div>
         </address>
       </div>
-      <div className="container mt-10 flex flex-col gap-2 border-t border-brand-graphite-400 pt-6 text-sm md:flex-row md:justify-between">
+      <div className="footer-bottom container mt-10 flex flex-col gap-2 pt-6 text-sm md:flex-row md:justify-between">
         <span>
           &copy; {new Date().getFullYear()} Todos os direitos reservados.
         </span>

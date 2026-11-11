@@ -290,15 +290,47 @@
 
   /* Rodapé */
   .footer {
-    @apply bg-brand-graphite text-brand-gray py-12;
+    @apply border-t-4 border-brand-gold bg-brand-graphite py-14 text-brand-gray;
   }
 
   .footer h2 {
     @apply text-brand-ivory;
   }
 
+  .footer-brand {
+    @apply flex flex-col gap-5;
+  }
+
+  .footer-logo {
+    @apply h-auto w-44 object-contain object-left;
+  }
+
+  .footer-brand p {
+    @apply max-w-xs text-brand-gray;
+  }
+
+  .footer-heading {
+    @apply font-montserrat text-lg uppercase tracking-wider;
+  }
+
+  .footer .link {
+    @apply text-brand-gray no-underline hover:text-brand-gold-light;
+  }
+
   .footer a {
+    @apply transition-colors;
+  }
+
+  .footer address a {
     @apply text-brand-gray hover:text-brand-gold-light;
+  }
+
+  .footer address svg {
+    @apply mt-1 size-5 shrink-0 text-brand-gold;
+  }
+
+  .footer-bottom {
+    @apply border-t border-brand-gold/50;
   }
 
   /* Layout de seções */
@@ -331,10 +363,10 @@
   }
 
   .hero-background {
-    @apply absolute inset-0 -z-10 bg-cover bg-center grayscale;
+    @apply absolute inset-0 -z-10 bg-cover bg-[center_45%] grayscale;
     background-image:
       linear-gradient(to top, rgb(34 35 38 / 65%), rgb(34 35 38 / 0%) 58%),
-      url("/images/predios-xrdes-tTWpe81zK8A-unsplash.jpg");
+      url("/images/hero-edgar-qBWXk3UbChE-unsplash.jpg");
   }
 
   .section-eyebrow {
