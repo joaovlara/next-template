@@ -1,34 +1,28 @@
 import Link from "next/link";
-import { navigation } from "@/src/app/_data/data";
-import { Brand, ContactButton } from "./SiteElements";
+import { routes } from "@/src/app/_data/data";
 
 const Navbar = () => {
   return (
-    <header className="site-header">
-      <nav className="shell navbar" aria-label="Navegação principal">
-        <Brand />
-        <div className="desktop-nav">
-          {navigation.map((item) => (
-            <Link href={item.href} key={item.href}>
-              {item.label}
+    <header className="header">
+      <nav className="navbar container" aria-label="Navegação principal">
+        <div className="navbar-links">
+          {routes.map((item) => (
+            <Link href={item.href} key={item.href} className="item-nav">
+              {item.name}
             </Link>
           ))}
         </div>
-        <div className="desktop-cta">
-          <ContactButton />
-        </div>
-        <details className="mobile-nav">
-          <summary aria-label="Abrir menu">
+        <details className="navbar-mobile">
+          <summary className="navbar-menu-button" aria-label="Abrir menu">
             <span></span>
             <span></span>
           </summary>
-          <div>
-            {navigation.map((item) => (
-              <Link href={item.href} key={item.href}>
-                {item.label}
+          <div className="navbar-mobile-links">
+            {routes.map((item) => (
+              <Link href={item.href} key={item.href} className="item-nav">
+                {item.name}
               </Link>
             ))}
-            <ContactButton />
           </div>
         </details>
       </nav>

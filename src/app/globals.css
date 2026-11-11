@@ -74,6 +74,69 @@
 }
 
 @layer components {
+  .container-1 {
+    @apply container mx-auto w-full py-16 md:py-24;
+  }
+
+  .carousel {
+    @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .highlight-card-item,
+  .service-card {
+    @apply rounded-md border border-brand-sand bg-white p-6 text-brand-graphite;
+  }
+
+  .highlight-card-item {
+    @apply flex flex-col gap-4;
+  }
+
+  .service-card {
+    @apply h-full;
+  }
+
+  .service-card-header {
+    @apply mb-4 flex items-center gap-3;
+  }
+
+  .service-card-icon {
+    @apply size-7 shrink-0 text-brand-gold-dark;
+  }
+
+  .service-card-title {
+    @apply font-montserrat text-lg font-semibold;
+  }
+
+  .service-card-description {
+    @apply text-brand-muted leading-relaxed;
+  }
+
+  .btn-primary,
+  .btn-hero,
+  .btn-cta {
+    @apply inline-flex min-h-12 items-center justify-center rounded-sm bg-brand-gold px-6 font-montserrat font-semibold text-brand-graphite transition-colors hover:bg-brand-gold-light;
+  }
+
+  .btn-hero {
+    @apply w-fit;
+  }
+
+  .cta-parallax-container {
+    @apply absolute inset-0 -z-10 overflow-hidden bg-brand-graphite;
+  }
+
+  .cta-parallax-image {
+    @apply object-cover opacity-30;
+  }
+
+  .download-section-container {
+    @apply bg-brand-sand;
+  }
+
+  .testimonial-card-item {
+    @apply h-full;
+  }
+
   /* Seções */
   .section {
     @apply py-16 md:py-24;
@@ -94,6 +157,38 @@
   /* Navegação */
   .header {
     @apply sticky top-0 z-50 bg-brand-ivory border-b border-brand-sand;
+  }
+
+  .navbar {
+    @apply flex min-h-20 items-center justify-between;
+  }
+
+  .navbar-links {
+    @apply hidden items-center gap-8 md:flex;
+  }
+
+  .navbar-mobile {
+    @apply relative md:hidden;
+  }
+
+  .navbar-menu-button {
+    @apply flex cursor-pointer list-none flex-col gap-1.5 rounded-sm p-2 text-brand-graphite;
+  }
+
+  .navbar-menu-button::-webkit-details-marker {
+    display: none;
+  }
+
+  .navbar-menu-button span {
+    @apply block h-0.5 w-6 bg-current;
+  }
+
+  .navbar-mobile-links {
+    @apply absolute right-0 top-full mt-3 flex min-w-48 flex-col gap-4 rounded-md border border-brand-sand bg-brand-ivory p-5 shadow-lg;
+  }
+
+  .navbar-mobile-links .item-nav {
+    @apply whitespace-nowrap;
   }
 
   .item-nav {
@@ -194,6 +289,62 @@
   /* Rodapé */
   .footer {
     @apply bg-brand-graphite text-brand-gray py-12;
+  }
+
+  .footer h2 {
+    @apply text-brand-ivory;
+  }
+
+  .footer a {
+    @apply text-brand-gray hover:text-brand-gold-light;
+  }
+
+  /* Layout de seções */
+  .hero-section {
+    @apply relative isolate min-h-[90vh] flex items-center justify-center overflow-hidden px-6 text-center;
+  }
+
+  .hero-content {
+    @apply relative z-10;
+  }
+
+  .hero-background {
+    @apply absolute inset-0 -z-10 bg-linear-to-t from-brand-gold-dark to-transparent opacity-40;
+  }
+
+  .section-eyebrow {
+    @apply text-sm font-bold uppercase tracking-widest text-brand-gold-ink;
+  }
+
+  .text-highlight {
+    @apply text-brand-gold-ink;
+  }
+
+  .cards-grid {
+    @apply grid gap-4 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .card-title {
+    @apply text-xl font-bold uppercase text-white;
+  }
+
+  /* Depoimentos */
+  .testimonial-card-content {
+    @apply bg-brand-graphite-600 p-6 flex flex-col justify-between gap-6 h-full;
+  }
+
+  .testimonial-avatar {
+    @apply size-12 rounded-full object-cover;
+  }
+
+  /* CTA */
+  .cta-section {
+    @apply relative isolate overflow-hidden;
+  }
+
+  /* Botão flutuante do WhatsApp */
+  .btn-wpp {
+    @apply fixed bottom-6 right-6 z-50 flex items-center justify-center rounded-full bg-brand-gold p-4 text-white shadow-lg hover:scale-110 hover:shadow-2xl;
   }
 }
 
