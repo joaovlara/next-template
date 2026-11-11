@@ -174,11 +174,11 @@ export const services = [
   },
 ];
 
-export const downloadApp = {
+export const getApp = {
   title: "Uma experiência digital pensada para cada condomínio.",
   text: "Com a Potengi, seu condomínio conta com um aplicativo exclusivo e personalizado que reúne recursos para facilitar o acesso às informações e aos serviços do dia a dia.",
   text2:
-    "Por meio da plataforma, os moradores podem realizar reservas de espaços comuns, consultar documentos, acessar boletos e acompanhar comunicados, conforme as funcionalidades configuradas para cada condomínio.",
+    "Por meio da plataforma, os moradores podem realizar reservas de espaços comuns, consultar documentos, acessar boletos, e acompanhar comunicados, conforme as funcionalidades configuradas para cada condomínio.",
   buttonLabel: "Saiba mais",
   link: infos.wppApp,
 };

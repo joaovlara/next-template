@@ -145,7 +145,32 @@
   }
 
   .download-section-container {
-    @apply bg-brand-sand;
+    @apply relative min-h-[38rem] bg-brand-gold;
+  }
+
+  .download-section-container h2 {
+    @apply text-4xl leading-tight text-brand-graphite md:text-5xl;
+  }
+
+  .download-section-container p {
+    @apply text-lg leading-relaxed text-brand-graphite md:text-xl;
+  }
+
+  .download-section-container .btn-primary {
+    @apply bg-brand-graphite text-brand-ivory hover:bg-brand-graphite-600;
+  }
+
+  .get-app-card {
+    @apply relative h-[20rem] w-full overflow-hidden bg-brand-graphite lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-[30vw];
+  }
+
+  .get-app-content {
+    @apply relative z-10;
+    @apply lg:pr-[30vw];
+  }
+
+  .get-app-image {
+    @apply object-cover grayscale-25;
   }
 
   .testimonial-card-item {
