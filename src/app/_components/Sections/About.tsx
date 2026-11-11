@@ -8,12 +8,13 @@ export default function About() {
 
   return (
     <section className="container-1">
-      <FadeIn className="flex flex-col gap-6 md:max-w-4xl">
-        <p>{about.text}</p>
-
-        <Link href={sobreHref} className="btn-outline w-fit uppercase">
-          Saiba mais
-        </Link>
+      <FadeIn className="flex flex-col gap-6">
+        <h2 className="font-bold text-3xl md:text-5xl text-brand-graphite uppercase">
+          {about.title}
+        </h2>
+        <p className="font-semibold text-2xl md:text-4xl text-brand-graphite-400">
+          {about.text}
+        </p>
       </FadeIn>
     </section>
   );

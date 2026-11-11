@@ -132,7 +132,8 @@ export const highlights = [
 ];
 
 export const about = {
-  text: "Acreditamos que a valorização de um condomínio começa com uma gestão financeira sólida. A Potengi proporciona segurança nos recebimentos e melhores condições para preservar o patrimônio, realizar melhorias e planejar o futuro.",
+  title:"Acreditamos que a valorização de um condomínio começa com uma gestão financeira sólida.",
+  text: "A Potengi proporciona segurança nos recebimentos e melhores condições para preservar o patrimônio, realizar melhorias e planejar o futuro.",
 };
 
 export const services = [
