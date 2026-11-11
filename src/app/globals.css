@@ -30,7 +30,7 @@
   }
 
   body {
-    @apply bg-brand-ivory text-brand-graphite text-[17px] leading-relaxed antialiased;
+    @apply bg-brand-sand text-brand-graphite leading-relaxed antialiased;
   }
 
   h1 {
@@ -130,7 +130,7 @@
 
   /* Navegação */
   .header {
-    @apply sticky top-0 z-50 bg-brand-ivory border-b border-brand-sand;
+    @apply sticky top-0 z-50 bg-brand-graphite border-b border-brand-sand;
   }
 
   .navbar {
@@ -141,12 +141,16 @@
     @apply hidden items-center gap-8 md:flex;
   }
 
+  .navbar-desktop-cta {
+    @apply hidden md:inline-flex;
+  }
+
   .navbar-mobile {
     @apply relative md:hidden;
   }
 
   .navbar-menu-button {
-    @apply flex cursor-pointer list-none flex-col gap-1.5 rounded-sm p-2 text-brand-graphite;
+    @apply relative z-50 flex cursor-pointer list-none flex-col gap-1.5 rounded-sm p-2 text-brand-ivory;
   }
 
   .navbar-menu-button::-webkit-details-marker {
@@ -154,19 +158,44 @@
   }
 
   .navbar-menu-button span {
-    @apply block h-0.5 w-6 bg-current;
+    @apply block h-0.5 w-6 bg-current transition-transform duration-300;
+  }
+
+  .navbar-mobile[open]::before {
+    content: "";
+    @apply fixed inset-0 z-40 bg-black/65;
   }
 
   .navbar-mobile-links {
-    @apply absolute right-0 top-full mt-3 flex min-w-48 flex-col gap-4 rounded-md border border-brand-sand bg-brand-ivory p-5 shadow-lg;
+    @apply fixed right-0 top-0 z-40 flex h-dvh w-1/2 flex-col justify-between bg-brand-graphite p-8 pt-28 shadow-2xl;
+  }
+
+  .navbar-mobile-nav {
+    @apply flex flex-col gap-6;
   }
 
   .navbar-mobile-links .item-nav {
-    @apply whitespace-nowrap;
+    @apply block whitespace-nowrap text-base;
+  }
+
+  .navbar-mobile-cta {
+    @apply w-full;
+  }
+
+  .navbar-mobile[open] .navbar-menu-button span:nth-child(1) {
+    @apply translate-y-2 rotate-45;
+  }
+
+  .navbar-mobile[open] .navbar-menu-button span:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .navbar-mobile[open] .navbar-menu-button span:nth-child(3) {
+    @apply -translate-y-2 -rotate-45;
   }
 
   .item-nav {
-    @apply font-montserrat font-medium text-brand-muted hover:text-brand-graphite;
+    @apply text-sm font-montserrat font-medium text-brand-gray hover:text-brand-gold-light;
   }
 
   /* Botões */
