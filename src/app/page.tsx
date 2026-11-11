@@ -17,8 +17,8 @@ export default function Home() {
         <GetApp />
         <Services />
         <Testimonials />
-        <WhatsAppButton />
         <CTA />
+        <WhatsAppButton />
       </main>
     </>
   );

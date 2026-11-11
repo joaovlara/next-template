@@ -137,11 +137,33 @@
   }
 
   .cta-parallax-container {
-    @apply absolute inset-0 -z-10 overflow-hidden bg-brand-graphite;
+    @apply absolute inset-0 -z-10 overflow-hidden bg-brand-gold-dark;
   }
 
-  .cta-parallax-image {
-    @apply object-cover opacity-30;
+  .cta-parallax-container::before {
+    content: "";
+    @apply absolute inset-0 bg-cover bg-center grayscale;
+    background-image:
+      linear-gradient(
+        to right,
+        rgb(34 35 38 / 92%),
+        rgb(34 35 38 / 58%) 58%,
+        rgb(34 35 38 / 25%)
+      ),
+      url("/images/CTA-annie-spratt-hCb3lIB8L8E-unsplash.jpg");
+    background-attachment: fixed;
+  }
+
+  .cta-section h2 {
+    @apply max-w-5xl text-3xl uppercase leading-tight text-brand-ivory sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .cta-section .text-highlight {
+    @apply text-brand-gold-light;
+  }
+
+  .cta-section .btn-cta {
+    @apply bg-brand-ivory text-brand-graphite hover:bg-brand-gold-light;
   }
 
   .download-section-container {
@@ -386,7 +408,13 @@
 
   /* CTA */
   .cta-section {
-    @apply relative isolate overflow-hidden;
+    @apply relative isolate min-h-[32rem] overflow-hidden;
+  }
+
+  @media (max-width: 767px) {
+    .cta-parallax-container::before {
+      background-attachment: scroll;
+    }
   }
 
   /* Botão flutuante do WhatsApp */
