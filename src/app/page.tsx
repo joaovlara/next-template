@@ -1,5 +1,3 @@
-import Navbar from "./_components/Navbar";
-import Footer from "./_components/Footer";
 import Hero from "./_components/Sections/Hero";
 import CTA from "./_components/Sections/CTA";
 import WhatsAppButton from "./_components/WppButton";

@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import { infos, navigation } from "@/src/app/_data/data";
-import { Brand } from "./SiteElements";
 
 const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
-          <Brand />
           <p>Segurança financeira e valorização para a gestão condominial.</p>
         </div>
         <div>
