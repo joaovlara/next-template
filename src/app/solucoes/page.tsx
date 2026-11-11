@@ -1,9 +1,12 @@
-import React from 'react'
+import HeaderPage from "../_components/HeaderPage";
 
-const Contato = () => {
+export default function Solucoes() {
   return (
-    <div>Contato</div>
-  )
+    <main>
+      <HeaderPage
+        pageName="Soluções"
+        subtitle="Descubra soluções para uma gestão condominial mais segura, previsível e eficiente."
+      />
+    </main>
+  );
 }
-
-export default Contato

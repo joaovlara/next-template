@@ -369,6 +369,22 @@
       url("/images/hero-edgar-qBWXk3UbChE-unsplash.jpg");
   }
 
+  .page-header {
+    @apply bg-brand-sand;
+  }
+
+  .page-header-content {
+    @apply flex min-h-[24rem] flex-col justify-center gap-5 py-16;
+  }
+
+  .page-header h1 {
+    @apply max-w-4xl text-brand-graphite;
+  }
+
+  .page-header h2 {
+    @apply max-w-2xl text-lg font-normal leading-relaxed text-brand-muted md:text-xl;
+  }
+
   .section-eyebrow {
     @apply text-sm font-bold uppercase tracking-widest text-brand-gold-ink;
   }

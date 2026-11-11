@@ -1,9 +1,12 @@
-import React from 'react'
+import HeaderPage from "../_components/HeaderPage";
 
-const Sobre = () => {
+export default function Sobre() {
   return (
-    <div>Sobre</div>
-  )
+    <main>
+      <HeaderPage
+        pageName="Sobre"
+        subtitle="Conheça a nossa história, os nossos valores e o compromisso com cada condomínio."
+      />
+    </main>
+  );
 }
-
-export default Sobre
