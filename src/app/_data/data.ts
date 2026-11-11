@@ -107,43 +107,29 @@ export const hero = {
   link: infos.wppApp,
 };
 
-// Diferenciais (todos os botões levam à página Soluções)
+// Diferenciais
 export const highlights = [
   {
     title: "Capital próprio",
-    description:
-      "Estrutura financeira própria, aliada à experiência no setor de garantia condominial.",
     icon: CircleDollarSign,
   },
   {
     title: "Atendimento humanizado",
-    description:
-      "Atenção às pessoas e às necessidades de cada condomínio, de forma próxima e eficiente.",
     icon: HeartHandshake,
   },
   {
     title: "Empresa sólida no mercado",
-    description:
-      "Estrutura financeira consistente e compromisso com cada operação.",
     icon: ShieldCheck,
   },
   {
     title: "Atuação em todo o Brasil",
-    description:
-      "Atendimento a condomínios em todo o país, respeitando as particularidades de cada operação.",
     icon: Globe,
   },
   {
     title: "Integração à Rede Garantidora",
-    description:
-      "Parte de uma rede com mais de 10 empresas especializadas em garantia condominial.",
     icon: Network,
   },
-].map((item) => ({
-  ...item,
-  buttonLabel: "Conheça nossas soluções",
-  href: "/solucoes",
-}));
+];
 
 export const about = {
   text: "Acreditamos que a valorização de um condomínio começa com uma gestão financeira sólida. A Potengi proporciona segurança nos recebimentos e melhores condições para preservar o patrimônio, realizar melhorias e planejar o futuro.",

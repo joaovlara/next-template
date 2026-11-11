@@ -3,13 +3,12 @@ import FadeIn from "../Animations/FadeIn";
 
 export default function Highlights() {
   return (
-    <section className="container-1">
-      <FadeIn className="carousel">
-        {highlights.map(({ title, description, icon: Icon }) => (
+    <section className="">
+      <FadeIn className="highlights-grid">
+        {highlights.map(({ title, icon: Icon }) => (
           <article key={title} className="highlight-card-item">
             <Icon aria-hidden="true" className="service-card-icon" />
-            <h3 className="card-title">{title}</h3>
-            <p className="text-sm md:text-base">{description}</p>
+            <h3 className="highlight-card-title">{title}</h3>
           </article>
         ))}
       </FadeIn>

@@ -73,13 +73,25 @@
     @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
   }
 
+  .highlights-grid {
+    @apply grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-5;
+  }
+
   .highlight-card-item,
   .service-card {
-    @apply rounded-md border border-brand-sand bg-white p-6 text-brand-graphite;
+    @apply bg-brand-gold p-6 text-brand-graphite;
   }
 
   .highlight-card-item {
-    @apply flex flex-col gap-4;
+    @apply flex min-h-32 flex-col items-center justify-center gap-3 text-center;
+  }
+
+  .highlight-card-item:last-child {
+    @apply col-span-2 sm:col-span-1;
+  }
+
+  .highlight-card-title {
+    @apply font-montserrat text-sm font-bold text-brand-graphite sm:text-base;
   }
 
   .service-card {
@@ -91,7 +103,7 @@
   }
 
   .service-card-icon {
-    @apply size-7 shrink-0 text-brand-gold-dark;
+    @apply size-7 shrink-0 text-brand-graphite;
   }
 
   .service-card-title {
