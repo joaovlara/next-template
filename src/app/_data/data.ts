@@ -192,8 +192,29 @@ export const cta = {
 export const testimonials = {
   eyebrow: "Depoimentos",
   title: "A confiança de quem conta com a Potengi.",
-  // Depoimentos reais de síndicos (a enviar)
-  items: [] as {
+  items: [
+    {
+      id: 1,
+      nome: "Maria Oliveira",
+      funcao: "Síndica",
+      depoimento:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci vitae justo consequat facilisis.",
+    },
+    {
+      id: 2,
+      nome: "Carlos Mendes",
+      funcao: "Administrador condominial",
+      depoimento:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      id: 3,
+      nome: "Ana Souza",
+      funcao: "Síndica profissional",
+      depoimento:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+    },
+  ] as {
     id: number;
     nome: string;
     funcao: string;

@@ -332,12 +332,56 @@
   }
 
   /* Depoimentos */
-  .testimonial-card-content {
-    @apply bg-brand-graphite-600 p-6 flex flex-col justify-between gap-6 h-full;
+  .testimonials-section {
+    @apply bg-brand-ivory text-center;
+  }
+
+  .testimonials-heading {
+    @apply mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3;
+  }
+
+  .testimonials-heading h2 {
+    @apply text-brand-graphite;
+  }
+
+  .testimonials-grid {
+    @apply grid gap-12 md:grid-cols-3 md:gap-8;
+  }
+
+  .testimonial-card-item {
+    @apply flex flex-col items-center;
+  }
+
+  .testimonial-quote {
+    @apply mb-4 size-12 fill-brand-graphite text-brand-graphite;
+  }
+
+  .testimonial-quote-text {
+    @apply mb-7 max-w-xs text-base leading-relaxed text-brand-graphite;
+  }
+
+  .testimonial-author {
+    @apply flex flex-col items-center gap-1;
   }
 
   .testimonial-avatar {
-    @apply size-12 rounded-full object-cover;
+    @apply mb-3 size-20 rounded-full object-cover;
+  }
+
+  .testimonial-avatar-placeholder {
+    @apply flex items-center justify-center bg-brand-gray text-brand-graphite;
+  }
+
+  .testimonial-avatar-placeholder svg {
+    @apply size-8;
+  }
+
+  .testimonial-author strong {
+    @apply font-montserrat text-base font-bold text-brand-graphite;
+  }
+
+  .testimonial-author span:last-child {
+    @apply text-sm uppercase tracking-widest text-brand-gold-ink;
   }
 
   /* CTA */
