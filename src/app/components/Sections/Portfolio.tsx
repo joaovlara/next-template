@@ -16,7 +16,7 @@ export default function Portfolio() {
   return (
     <section className="py-16 bg-brand-light text-black">
       <article className="container mx-auto px-4 max-w-7xl">
-        <h2 className="text-4xl md:text-6xl font-bold mb-8">Portfolio</h2>
+        <h2 className="text-4xl md:text-6xl font-bold mb-8">Lorem Ispulumi</h2>
 
         <PortfolioMobile items={portfolioItems} />
         <PortfolioDesktop items={portfolioItems} />
