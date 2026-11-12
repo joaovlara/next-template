@@ -7,7 +7,7 @@ interface PortfolioDesktopProps {
 
 export function PortfolioDesktop({ items }: PortfolioDesktopProps) {
   return (
-    <div className="hidden md:grid md:grid-cols-12 gap-4 md:auto-rows-[360px]">
+    <div className="hidden md:grid md:grid-cols-12 gap-4 md:auto-rows-90">
       {items.map((item) => (
         <PortfolioCard key={item.id} item={item} className={item.desktopSpan} />
       ))}

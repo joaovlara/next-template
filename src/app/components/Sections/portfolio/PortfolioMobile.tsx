@@ -15,7 +15,7 @@ export function PortfolioMobile({ items }: PortfolioMobileProps) {
   return (
     <div className="md:hidden flex flex-col gap-4">
       {/* Card Principal em Destaque */}
-      <div className="h-[320px] w-full relative overflow-hidden">
+      <div className="h-80 w-full relative overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIndex}
