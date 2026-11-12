@@ -1,10 +1,25 @@
 import React from "react";
-import { navigation } from "@/data/data";
+import { navigation } from "@data/data";
 
 const Footer = () => {
   return (
-    <footer className="py-9">
-      <section className="container">Footer</section>
+    <footer className="">
+      <section className="container">
+        <article className="grid md:grid-cols-3">
+          <div>logo</div>
+          <div className="flex flex-col gap-3 font-semibold">
+            {navigation.map((item, index) => (
+              <a key={index} href={item.href || "#"} className="">
+                {item.name}
+              </a>
+            ))}
+          </div>
+          <div>
+            bullet redes sociais
+          </div>
+        </article>
+        <span> copyright </span>
+      </section>
     </footer>
   );
 };
