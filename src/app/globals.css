@@ -43,6 +43,10 @@
 
 @layer components {
 
+  .carousel {
+    @apply flex justify-around gap-6 p-6  overflow-x-auto scrollbar-none;
+  }
+
   .card-color-guide {
     @apply aspect-square flex justify-center items-center p-3 h-40 rounded-2xl font-bold;
   }
