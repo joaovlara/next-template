@@ -11,10 +11,10 @@ export default function Hero() {
           </div>
           <div className="space-y-9">
             <h1>
-              Lorem ipsulume <br /> dotr sithe dotmetsas
+              Lorem ipsulume <br /> dotr sithe <span className="text-brand-yellow">dotmetsas</span> dotmetsas
             </h1>
             <div className="grid md:grid-cols-2 space-y-9">
-              <div className="bg-red-500 h-30 card"></div>
+              <div className="bg-brand-red h-30 card"></div>
               <p className="md:px-3 text-2xl md:text-3xl">Lorem ipsulume dotr sithe dotmetsas ipsulume dotr sithe dotmetsas</p>
             </div>
           </div>

@@ -6,8 +6,8 @@
   --font-poppins: "Poppins", sans-serif;
 
   /* Colors */
-  --color-brand-dark: #10101c;
   --color-brand-black: #000000;
+  --color-brand-dark: #10101c;
   --color-brand-gray: #cdcdcd;
   --color-brand-light: #efebe4;
   --color-brand-yellow: #e29d20;
@@ -33,26 +33,16 @@
   button {
     @apply hover:cursor-pointer transition-colors duration-300 inline-block;
   }
-  
+
   /* Container centralizado */
   .container {
     @apply max-w-7xl mx-auto px-3 py-1.5;
   }
-
 }
 
 @layer components {
-
   .carousel {
     @apply flex justify-around gap-6 p-6  overflow-x-auto scrollbar-none;
-  }
-
-  .card-color-guide {
-    @apply aspect-square flex justify-center items-center p-3 h-40 rounded-2xl font-bold;
-  }
-  
-  .bento-card {
-    @apply bg-white rounded-3xl p-6 shadow-sm flex items-center justify-center font-bold text-zinc-400;
   }
 
   /* Botão padrão */
@@ -80,9 +70,11 @@
   /* Cards */
 
   .card {
-    @apply rounded-2xl
+    @apply rounded-2xl shadow-sm bg-white p-3;
   }
-
+  .bento-card {
+    @apply rounded-2xl p-6 flex items-center justify-center font-bold bg-brand-light;
+  }
 }
 
 @layer utilities {

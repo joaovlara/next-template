@@ -16,20 +16,10 @@ export default function Highlights() {
           <motion.div
             drag="x"
             dragConstraints={carouselRef}
-            className="flex gap-6 w-max"
+            className="flex gap-3 w-max"
           >
-            <div className="10075 rounded-2xl bg-red-400 min-w-[80vw] md:min-w-[60vw] pointer-events-none flex items-center justify-center text-white text-2xl">
-              1
-            </div>
-            <div className="h1005 rounded-2xl bg-blue-400 min-w-[80vw] md:min-w-[60vw] pointer-events-none flex items-center justify-center text-white text-2xl">
-              2
-            </div>
-            <div className="h-7100rounded-2xl bg-yellow-400 min-w-[80vw] md:min-w-[60vw] pointer-events-none flex items-center justify-center text-white text-2xl">
-              3
-            </div>
-            <div className="h-100 rounded-2xl bg-green-400 min-w-[80vw] md:min-w-[60vw] pointer-events-none flex items-center justify-center text-white text-2xl">
-              4
-            </div>
+            <div className="card w-[70vw] h-125 bg-brand-teal">1</div>
+            <div className="card w-[70vw] h-125 bg-brand-orange">2</div>
           </motion.div>
         </motion.div>
       </article>
