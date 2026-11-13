@@ -9,7 +9,7 @@ export default function Services() {
   const constraintsRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="py-9 bg-brand-light text-black">
+    <section className="py-9 text-brand-light">
       <article className="container mx-auto px-4 mb-8">
         <h2 className="text-4xl md:text-6xl font-bold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
