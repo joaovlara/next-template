@@ -13,9 +13,9 @@ export default function Hero() {
             <h1>
               Lorem ipsulume <br /> dotr sithe dotmetsas
             </h1>
-            <div className="grid md:grid-cols-2">
+            <div className="grid md:grid-cols-2 space-y-9">
               <div className="bg-red-500 h-30 card"></div>
-              <p className="md:px-3 py-3 text-2xl md:text-3xl">Lorem ipsulume dotr sithe dotmetsas ipsulume dotr sithe dotmetsas</p>
+              <p className="md:px-3 text-2xl md:text-3xl">Lorem ipsulume dotr sithe dotmetsas ipsulume dotr sithe dotmetsas</p>
             </div>
           </div>
         </div>
