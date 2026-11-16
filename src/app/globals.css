@@ -69,10 +69,6 @@
     @apply container mx-auto w-full py-12 md:py-24;
   }
 
-  .carousel {
-    @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
-  }
-
   .highlights-grid {
     @apply grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-5;
   }
@@ -260,10 +256,6 @@
     @apply relative z-50 flex cursor-pointer list-none flex-col gap-1.5 rounded-sm p-2 text-brand-ivory;
   }
 
-  .navbar-menu-button::-webkit-details-marker {
-    display: none;
-  }
-
   .navbar-menu-button span {
     @apply block h-0.5 w-6 bg-current transition-transform duration-300;
   }
@@ -307,15 +299,6 @@
 
   .item-nav {
     @apply text-sm font-montserrat font-medium text-brand-gray hover:text-brand-gold-light;
-  }
-
-  /* Botões */
-  .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-sm font-montserrat font-semibold disabled:opacity-45 disabled:cursor-not-allowed;
-  }
-
-  .btn-outline {
-    @apply border-2 border-current bg-transparent hover:bg-brand-sand hover:text-brand-graphite;
   }
 
   /* Texto padrão */
@@ -461,14 +444,6 @@
     @apply text-base leading-relaxed text-brand-muted;
   }
 
-  .about-company-heading {
-    @apply mb-14 flex max-w-3xl flex-col gap-4;
-  }
-
-  .about-company-heading h2 {
-    @apply text-3xl uppercase md:text-5xl;
-  }
-
   .values-section {
     @apply bg-brand-sand;
   }
@@ -597,10 +572,6 @@
 
   .services-carousel-dots button.is-active {
     @apply w-6 bg-brand-gold-ink;
-  }
-
-  .card-title {
-    @apply text-xl font-bold uppercase text-white;
   }
 
   /* Depoimentos */
