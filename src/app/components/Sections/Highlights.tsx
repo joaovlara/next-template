@@ -6,6 +6,7 @@ import Image from "next/image";
 import Card from "../Cards/Card";
 
 export default function Highlights() {
+
   const mockCards = [
     {
       id: 1,
@@ -30,7 +31,7 @@ export default function Highlights() {
   const constraintsRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="py-9 text-brand-light">
+    <section className="py-9 bg-brand-light text-brand-dark">
       <article className="container mx-auto px-4 mb-8">
         <h2 className="text-4xl md:text-6xl font-bold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
