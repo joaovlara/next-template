@@ -421,6 +421,38 @@
     @apply bg-brand-ivory;
   }
 
+  .about-company-list {
+    @apply flex w-full flex-col gap-0;
+  }
+
+  .about-company-card {
+    @apply grid overflow-hidden bg-white shadow-sm md:grid-cols-2;
+  }
+
+  .about-company-image {
+    @apply relative min-h-[22rem] overflow-hidden bg-brand-graphite;
+  }
+
+  .about-company-image img {
+    @apply object-cover grayscale;
+  }
+
+  .about-company-content {
+    @apply flex flex-col justify-center gap-8 p-8 md:p-12;
+  }
+
+  .about-company-item {
+    @apply pl-0;
+  }
+
+  .about-company-item h3 {
+    @apply mb-3 text-xl text-brand-graphite md:text-2xl;
+  }
+
+  .about-company-item p {
+    @apply text-base leading-relaxed text-brand-muted;
+  }
+
   .about-company-heading {
     @apply mb-14 flex max-w-3xl flex-col gap-4;
   }
