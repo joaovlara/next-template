@@ -401,6 +401,54 @@
     @apply max-w-2xl text-lg font-normal leading-relaxed text-brand-muted md:text-xl;
   }
 
+  .about-company-section {
+    @apply bg-brand-ivory;
+  }
+
+  .about-company-heading {
+    @apply mb-14 flex max-w-3xl flex-col gap-4;
+  }
+
+  .about-company-heading h2 {
+    @apply text-3xl uppercase md:text-5xl;
+  }
+
+  .values-section {
+    @apply bg-brand-sand;
+  }
+
+  .values-heading {
+    @apply flex flex-col gap-3;
+  }
+
+  .values-layout {
+    @apply flex flex-col gap-12 lg:grid lg:grid-cols-[minmax(12rem,0.65fr)_minmax(0,1.35fr)] lg:items-center lg:gap-16;
+  }
+
+  .values-grid {
+    @apply grid gap-4 md:grid-cols-2;
+  }
+
+  .value-card {
+    @apply flex aspect-square min-h-0 flex-col items-start gap-4 bg-brand-gold p-5;
+  }
+
+  .value-icon-wrapper {
+    @apply flex size-14 items-center justify-center rounded-full bg-brand-ivory;
+  }
+
+  .value-icon {
+    @apply size-7 text-brand-graphite;
+  }
+
+  .value-card h3 {
+    @apply text-xl text-brand-graphite;
+  }
+
+  .value-card p {
+    @apply text-brand-graphite-600;
+  }
+
   .section-eyebrow {
     @apply text-sm font-bold uppercase tracking-widest text-brand-gold-ink;
   }
