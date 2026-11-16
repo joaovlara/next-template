@@ -12,18 +12,20 @@ export default function Solucoes() {
         subtitle={servicesHeader.text}
       />
 
-      <section className="solutions-section container-1">
-        <FadeIn className="solutions-heading">
-          <p className="section-eyebrow">Nossas soluções</p>
-          <h2>Serviços para uma gestão mais segura e eficiente.</h2>
-        </FadeIn>
+      <section className="solutions-section">
+        <div className="container-1">
+          <FadeIn className="solutions-heading">
+            <p className="section-eyebrow">Nossas soluções</p>
+            <h2>Serviços para uma gestão mais segura e eficiente.</h2>
+          </FadeIn>
 
-        <div className="solutions-grid">
-          {services.map(({ id, ...service }, index) => (
-            <FadeIn key={id} delay={index * 0.08}>
-              <ServiceCards {...service} />
-            </FadeIn>
-          ))}
+          <div className="solutions-grid">
+            {services.map(({ id, ...service }, index) => (
+              <FadeIn key={id} delay={index * 0.08}>
+                <ServiceCards {...service} />
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
