@@ -465,6 +465,62 @@
     @apply text-brand-graphite-600;
   }
 
+  .contact-feature {
+    @apply grid w-full md:grid-cols-2;
+  }
+
+  .contact-page {
+    @apply overflow-x-hidden bg-brand-ivory;
+  }
+
+  .contact-feature-content {
+    @apply flex min-h-[22rem] flex-col justify-center gap-5 bg-brand-gold p-8 md:p-14 lg:p-20;
+  }
+
+  .contact-feature-content h2 {
+    @apply max-w-md text-3xl uppercase md:text-5xl;
+  }
+
+  .contact-feature-image {
+    @apply relative min-h-[22rem] overflow-hidden bg-brand-graphite;
+  }
+
+  .contact-feature-image img {
+    @apply object-cover grayscale;
+  }
+
+  .contact-section {
+    @apply bg-brand-ivory;
+  }
+
+  .contact-heading {
+    @apply mb-12 flex flex-col gap-3;
+  }
+
+  .contact-heading h2 {
+    @apply text-3xl uppercase md:text-5xl;
+  }
+
+  .contact-grid {
+    @apply grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .contact-card {
+    @apply flex flex-col items-start gap-3;
+  }
+
+  .contact-icon {
+    @apply size-6 text-brand-gold-ink;
+  }
+
+  .contact-card h3 {
+    @apply font-montserrat text-xl font-semibold text-brand-graphite;
+  }
+
+  .contact-card-link {
+    @apply text-base leading-relaxed text-brand-muted underline decoration-brand-gold-ink/50 underline-offset-4 hover:text-brand-gold-ink;
+  }
+
   .section-eyebrow {
     @apply text-sm font-bold uppercase tracking-widest text-brand-gold-ink;
   }
