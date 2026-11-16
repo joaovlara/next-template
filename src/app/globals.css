@@ -402,7 +402,7 @@
   }
 
   .page-header {
-    @apply bg-brand-sand;
+    @apply border-b-4 border-brand-gold bg-brand-graphite text-brand-ivory;
   }
 
   .page-header-content {
@@ -410,11 +410,11 @@
   }
 
   .page-header h1 {
-    @apply max-w-4xl text-brand-graphite;
+    @apply max-w-4xl text-brand-ivory;
   }
 
   .page-header h2 {
-    @apply max-w-2xl text-lg font-normal leading-relaxed text-brand-muted md:text-xl;
+    @apply max-w-2xl text-lg font-normal leading-relaxed text-brand-gray md:text-xl;
   }
 
   .about-company-section {
