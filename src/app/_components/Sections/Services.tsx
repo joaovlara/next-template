@@ -5,9 +5,6 @@ import ServiceCards from "../Cards/ServiceCards";
 import HorizontalCarousel from "../Carousels/HorizontalCarousel";
 
 export default function Services() {
-  const servicosHref: string =
-    routes.find((route) => route.name === "SOLUÇÕES")?.href ?? "/solucoes";
-
   return (
     <section className="container-1 flex flex-col gap-10">
       <FadeIn className="flex flex-col gap-3">
@@ -23,7 +20,7 @@ export default function Services() {
         ))}
       </HorizontalCarousel>
 
-      <Link href={servicosHref} className="btn-primary w-fit uppercase">
+      <Link href="/solucoes" className="btn-primary w-fit uppercase">
         Conheça nossas soluções
       </Link>
     </section>
