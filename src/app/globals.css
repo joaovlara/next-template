@@ -223,6 +223,10 @@
     @apply lg:pr-[30vw];
   }
 
+  .get-app-text {
+    @apply max-w-2xl;
+  }
+
   .get-app-image {
     @apply object-cover grayscale-25;
   }

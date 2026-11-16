@@ -7,7 +7,7 @@ export default function GetApp() {
   return (
     <section className="download-section-container">
       <div className="container-1 get-app-content">
-        <FadeIn className="flex flex-col gap-6">
+        <FadeIn className="get-app-text flex flex-col gap-6">
           <h2>
             <HighlightText text={getApp.title} />
           </h2>
