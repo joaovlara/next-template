@@ -268,13 +268,17 @@
     @apply block h-0.5 w-6 bg-current transition-transform duration-300;
   }
 
-  .navbar-mobile[open]::before {
+  .navbar-mobile.is-open::before {
     content: "";
     @apply fixed inset-0 z-40 bg-black/65;
   }
 
   .navbar-mobile-links {
-    @apply fixed right-0 top-0 z-40 flex h-dvh w-1/2 flex-col justify-between bg-brand-graphite p-8 pt-28 shadow-2xl;
+    @apply invisible fixed right-0 top-0 z-40 flex h-dvh w-1/2 translate-x-full flex-col justify-between bg-brand-graphite p-8 pt-28 opacity-0 shadow-2xl transition-all duration-300;
+  }
+
+  .navbar-mobile.is-open .navbar-mobile-links {
+    @apply visible translate-x-0 opacity-100;
   }
 
   .navbar-mobile-nav {
@@ -289,15 +293,15 @@
     @apply w-full;
   }
 
-  .navbar-mobile[open] .navbar-menu-button span:nth-child(1) {
+  .navbar-mobile.is-open .navbar-menu-button span:nth-child(1) {
     @apply translate-y-2 rotate-45;
   }
 
-  .navbar-mobile[open] .navbar-menu-button span:nth-child(2) {
+  .navbar-mobile.is-open .navbar-menu-button span:nth-child(2) {
     @apply opacity-0;
   }
 
-  .navbar-mobile[open] .navbar-menu-button span:nth-child(3) {
+  .navbar-mobile.is-open .navbar-menu-button span:nth-child(3) {
     @apply -translate-y-2 -rotate-45;
   }
 
