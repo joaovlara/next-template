@@ -107,23 +107,39 @@
   }
 
   .service-card {
-    @apply h-full;
+    @apply flex h-[26rem] flex-col;
   }
 
   .service-card-header {
-    @apply mb-4 flex items-center gap-3;
+    @apply flex flex-col items-start gap-6;
   }
 
   .service-card-icon {
     @apply size-7 shrink-0 text-brand-graphite;
   }
 
+  .service-card-icon-wrapper {
+    @apply flex size-14 items-center justify-center rounded-full bg-brand-ivory;
+  }
+
   .service-card-title {
-    @apply font-montserrat text-lg font-semibold;
+    @apply font-montserrat text-xl font-semibold uppercase;
   }
 
   .service-card-description {
-    @apply text-brand-muted leading-relaxed;
+    @apply mt-6 text-black leading-relaxed;
+  }
+
+  .service-card-link {
+    @apply mt-auto flex size-10 items-center justify-center self-end rounded-full bg-brand-ivory text-brand-graphite transition-colors hover:bg-brand-gold-dark hover:text-brand-ivory;
+  }
+
+  .service-card-link svg {
+    @apply size-6 transition-transform;
+  }
+
+  .service-card-link:hover svg {
+    @apply scale-110;
   }
 
   .btn-primary,
@@ -393,8 +409,34 @@
     @apply text-brand-gold-ink;
   }
 
-  .cards-grid {
-    @apply grid gap-4 sm:grid-cols-2 lg:grid-cols-3;
+  .services-carousel {
+    @apply overflow-hidden pb-2;
+    cursor: grab;
+    touch-action: pan-x;
+  }
+
+  .services-carousel:active {
+    cursor: grabbing;
+  }
+
+  .services-carousel-track {
+    @apply flex w-max gap-4;
+  }
+
+  .services-carousel-track > div {
+    flex: 0 0 min(85vw, 22rem);
+  }
+
+  .services-carousel-dots {
+    @apply mt-4 flex justify-center gap-2;
+  }
+
+  .services-carousel-dots button {
+    @apply size-2 rounded-full bg-brand-gray transition-all duration-300;
+  }
+
+  .services-carousel-dots button.is-active {
+    @apply w-6 bg-brand-gold-ink;
   }
 
   .card-title {
