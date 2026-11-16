@@ -61,7 +61,10 @@ export default function Highlights() {
                   variant={card.variant}
                   className="flex flex-col justify-between h-75 w-[85vw] md:w-auto shrink-0 pointer-events-none"
                 >
-                  <div>Card</div>
+                  <div className="h-full flex flex-col justify-end p-6">
+                    <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
+                    <p className="text-base">{card.text}</p>
+                  </div>
                 </Card>
               ))}
             </motion.div>

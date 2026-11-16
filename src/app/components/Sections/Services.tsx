@@ -2,6 +2,8 @@
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import CardServices1 from "../Cards/CardServices1";
+import CardServices2 from "../Cards/CardServices2";
 
 export default function Services() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -18,8 +20,8 @@ export default function Services() {
             dragConstraints={carouselRef}
             className="flex gap-3 w-max"
           >
-            <div className="card w-[70vw] h-125 bg-brand-teal">1</div>
-            <div className="card w-[70vw] h-125 bg-brand-orange">2</div>
+            <CardServices1 />
+            <CardServices2 />
           </motion.div>
         </motion.div>
       </article>
