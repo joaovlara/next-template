@@ -13,15 +13,15 @@ export default function Hero() {
           </div>
           <div className="space-y-9">
             <h1>
-              Lorem ipsulume <br /> dotr sithe{" "}
+              Lorem ipsulume <br /> dotr sithe
               <span className="text-brand-yellow">dotmetsas</span> dotmetsas
             </h1>
             <div className="grid md:grid-cols-2 space-y-9">
               <div className="bg-brand-red h-30 card flex justify-around items-center">
-                <p className="text-3xl md:text-4xl">Lorem ipsum dolor sit amet</p>
+                <p className="text-2xl md:text-3xl">Lorem ipsum dolor sit amet</p>
                 <span className="bg-brand-yellow rounded-full text-4xl p-3"><FiArrowUpRight /></span>
               </div>
-              <p className="md:px-3 text-2xl md:text-3xl">
+              <p className="md:px-3 text-2xl md:text-3xl md:pt-9">
                 Lorem ipsulume dotr sithe dotmetsas ipsulume dotr sithe
                 dotmetsas
               </p>
