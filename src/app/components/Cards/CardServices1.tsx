@@ -1,25 +1,23 @@
 import React from "react";
 import Card from "./Card";
-import { FiArrowRight } from "react-icons/fi"; // Importando o ícone
+import { FiArrowRight } from "react-icons/fi";
 
 const CardServices1 = () => {
   return (
     <Card
-      variant="teal"
-      className="card w-[110vw] md:w-[70vw] h-125 text-brand-light"
+      variant="dark"
+      className="card w-[120vw] md:w-[70vw] md:min-h-125 text-brand-light"
     >
       {/* Wrapper principal: h-full e justify-between empurram a parte inferior para a base */}
-      <div className="flex flex-col justify-between h-full p-12">
+      <div className="flex flex-col justify-between h-full p-6 md:p-12">
         {/* Seção Superior: Grid com os textos */}
         <div className="grid grid-cols-2 gap-6">
           <div>
-            <h3 className="text-4xl uppercase font-semibold">titulo h3</h3>
-            <p className="text-2xl mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias,
-              ipsa dolores eveniet mollitia explicabo incidunt unde{" "}
-            </p>
+            <h3 className="text-3xl md:text-5xl uppercase font-bold font-bakbak">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </h3>
           </div>
-          <div>
+          <div className="pt-9">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium, repudiandae magni itaque aperiam ipsum illo
@@ -30,9 +28,11 @@ const CardServices1 = () => {
         </div>
 
         {/* Seção Inferior: Card interno e Seta alinhados nas extremidades */}
-        <div className="grid md:grid-cols-2 justify-between items-center mt-6 gap-6">
-          <Card className="p-12 w-full">teste</Card>
-          <div className="rounded-full flex justify-end p-3 w-fit bg-brand-orange">
+        <div className="grid grid-cols-2 items-center md:mt-6 gap-6">
+          <Card variant="teal" className="p-12 min-h-75">teste</Card>
+
+          {/* Mobile: justify-self-start (início). Desktop: md:justify-self-end (final) */}
+          <div className="rounded-full p-3 w-fit bg-brand-orange justify-self-start md:justify-self-end">
             <FiArrowRight size={32} />
           </div>
         </div>
