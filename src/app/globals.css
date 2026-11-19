@@ -58,6 +58,10 @@
     @apply hover:text-brand-teal;
   }
 
+  .btn-cta {
+    @apply rounded bg-brand-black text-brand-light p-3 w-full md:min-w-100
+  }
+
   /* Texto padrão */
   .text {
     @apply text-brand-gray leading-relaxed;
@@ -65,6 +69,10 @@
 
   .caption {
     @apply text-sm text-brand-gray italic;
+  }
+
+  .h3-cta {
+    @apply font-bakbak text-4xl md:text-5xl lg:text-7xl font-semibold uppercase
   }
 
   /* Cards */

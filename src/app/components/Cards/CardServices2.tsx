@@ -1,9 +1,8 @@
-import React from "react";
 import Card from "./Card";
 
 const CardServices2 = () => {
   return (
-    <Card variant="yellow" className="card w-[70vw] h-125">
+    <Card variant="red" className="card w-[70vw] h-125">
       CardServices2
     </Card>
   );
